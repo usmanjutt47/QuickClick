@@ -1,6 +1,4 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import {
   createStackNavigator,
@@ -39,7 +37,6 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="PhotoUploading" component={PhotoUploading} />
 
-        {/* Btotom Tabs */}
         <Stack.Screen name="CustomTab" component={CustomTab} />
         <Stack.Screen name="Orders" component={Orders} />
         <Stack.Screen name="Cart" component={Cart} />
@@ -49,12 +46,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
