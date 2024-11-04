@@ -1,4 +1,3 @@
-// CustomTab.js
 import React from "react";
 import { View, Text, StyleSheet, Pressable, Image } from "react-native";
 import { useNavigation, useNavigationState } from "@react-navigation/native";
@@ -6,12 +5,10 @@ import { useNavigation, useNavigationState } from "@react-navigation/native";
 export default function CustomTab() {
   const navigation = useNavigation();
 
-  // Get the current route name from the navigation state
   const activeScreen = useNavigationState(
     (state) => state.routes[state.index].name
   );
 
-  // Function to handle navigation
   const handleNavigation = (screen) => {
     navigation.navigate(screen);
   };
@@ -27,8 +24,8 @@ export default function CustomTab() {
             <Image
               source={
                 activeScreen === "Home"
-                  ? require("../../assets/images/homefill.png") // Filled icon
-                  : require("../../assets/images/home.png") // Default icon
+                  ? require("../../assets/images/homefill.png")
+                  : require("../../assets/images/home.png")
               }
               style={styles.icon}
             />
@@ -45,8 +42,8 @@ export default function CustomTab() {
             <Image
               source={
                 activeScreen === "Orders"
-                  ? require("../../assets/images/fillOrder.png") // Filled icon
-                  : require("../../assets/images/order.png") // Default icon
+                  ? require("../../assets/images/fillOrder.png")
+                  : require("../../assets/images/order.png")
               }
               style={styles.icon}
             />
@@ -65,8 +62,8 @@ export default function CustomTab() {
             <Image
               source={
                 activeScreen === "Cart"
-                  ? require("../../assets/images/fillCart.png") // Filled icon
-                  : require("../../assets/images/cart.png") // Default icon
+                  ? require("../../assets/images/fillCart.png")
+                  : require("../../assets/images/cart.png")
               }
               style={styles.icon}
             />
@@ -78,8 +75,8 @@ export default function CustomTab() {
             <Image
               source={
                 activeScreen === "Favorite"
-                  ? require("../../assets/images/heartFill.png") // Filled icon
-                  : require("../../assets/images/heart.png") // Default icon
+                  ? require("../../assets/images/heartFill.png")
+                  : require("../../assets/images/heart.png")
               }
               style={styles.icon}
             />
@@ -98,8 +95,8 @@ export default function CustomTab() {
             <Image
               source={
                 activeScreen === "Profile"
-                  ? require("../../assets/images/filluser.png") // Filled icon
-                  : require("../../assets/images/user.png") // Default icon
+                  ? require("../../assets/images/filluser.png")
+                  : require("../../assets/images/user.png")
               }
               style={styles.icon}
             />
@@ -155,8 +152,8 @@ const styles = StyleSheet.create({
     color: "black",
   },
   activeText: {
-    color: "black", // Keep text color black for active tab
-    fontWeight: "bold", // Make text bold for active tab
+    color: "black",
+    fontWeight: "bold",
   },
   cartButton: {
     alignItems: "center",
