@@ -4,7 +4,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import { useNavigation } from "@react-navigation/native";
 import Feather from "@expo/vector-icons/Feather";
 
-const { width, height } = Dimensions.get("window");
+const { height } = Dimensions.get("window");
 export default function PhotoUploading() {
   const navigation = useNavigation();
   return (
@@ -30,7 +30,6 @@ export default function PhotoUploading() {
             marginTop: height * 0.05,
             justifyContent: "center",
             alignItems: "center",
-
           }}
         >
           <AntDesign name="arrowleft" size={24} color="black" />
