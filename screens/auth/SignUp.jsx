@@ -196,7 +196,7 @@ export default function SignUp() {
             />
           </View>
 
-          <View style={styles.mapContainer}>
+          {/* <View style={styles.mapContainer}>
             <MapView style={styles.map} region={region}>
               {currentLocation && (
                 <Marker
@@ -206,7 +206,7 @@ export default function SignUp() {
                 />
               )}
             </MapView>
-          </View>
+          </View> */}
 
           <Pressable
             style={styles.signUpButton}
